@@ -1,4 +1,4 @@
-const cardArray = [
+var cardArray = [
 	{
 		name: 'html',
 		img: 'images/html.png',
@@ -49,16 +49,6 @@ const cardArray = [
 	}
 ]
 
-cardArray.sort(() => 0.5 - Math.random())
+cardArray.sort(() => 0.5 - Math.random());
+console.log(cardArray);
 
-/* Randomize array in-place using Durstenfeld shuffle algorithm */
-function shuffleArray(array) {
-	for (let i = array.lenght - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j] = array[i], array[i]];
-		// above is a new way to make this in ES6/ECMAScript 2015:
-		// var temp = array [i];
-		// array[i] = array[j];
-		// array[j] = temp;
-	}
-}
