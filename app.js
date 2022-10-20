@@ -1,51 +1,51 @@
 const cardArray = [
 	{
 		name: 'html',
-		img: 'images/html.png',
+		img: 'img/html.png',
 	},
 	{
 		name: 'css',
-		img: 'images/css.png',
+		img: 'img/css.png',
 	},
 	{
 		name: 'javascript.png',
-		img: 'images/javascript.png',
+		img: 'img/javascript.png',
 	},
 	{
 		name: 'react',
-		img: 'images/react.png',
+		img: 'img/react.png',
 	},
 	{
 		name: 'nodejs',
-		img: 'images/nodejs.png',
+		img: 'img/nodejs.png',
 	},
 	{
 		name: 'vercel',
-		img: 'images/vercel.jpg',
+		img: 'img/vercel.jpg',
 	},
 	{
 		name: 'html',
-		img: 'images/html.png',
+		img: 'img/html.png',
 	},
 	{
 		name: 'css',
-		img: 'images/css.png',
+		img: 'img/css.png',
 	},
 	{
 		name: 'javascript.png',
-		img: 'images/javascript.png',
+		img: 'img/javascript.png',
 	},
 	{
 		name: 'react',
-		img: 'images/react.png',
+		img: 'img/react.png',
 	},
 	{
 		name: 'nodejs',
-		img: 'images/nodejs.png',
+		img: 'img/nodejs.png',
 	},
 	{
 		name: 'vercel',
-		img: 'images/vercel.jpg',
+		img: 'img/vercel.jpg',
 	}
 ]
 
@@ -56,9 +56,9 @@ const gridDisplay = document.querySelector('#grid');
 function createBoard () {
 	for (let i = 0; i < 10; i++) {
 		const card = document.createElement('img');
-		card.setAttribute('src', 'images/blank.png');
+		card.setAttribute('src', 'img/background.png');
 		card.setAttribute('data-id', i);
-		console.log(card, i);
+		gridDisplay.append(card);
 	}
 }
 
